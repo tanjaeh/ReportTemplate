@@ -1,0 +1,102 @@
+% What kind of text document should we build
+\documentclass[a4,10pt]{article}
+
+
+% Include packages we need for different features (the less, the better)
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=blue,
+}
+\usepackage{graphicx,wrapfig,lipsum}
+
+
+
+% Math
+\usepackage{amsmath}
+
+% Clever cross-referencing
+\usepackage{cleveref}
+
+% Algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}%
+
+% Tikz
+\RequirePackage{tikz}
+\usetikzlibrary{arrows,shapes,calc,through,intersections,decorations.markings,positioning}
+
+\tikzstyle{every picture}+=[remember picture]
+
+\RequirePackage{pgfplots}
+\RequirePackage{pgfplotstable}
+
+% Better bibliography 
+\usepackage[round]{natbib}
+
+
+
+
+
+
+
+
+% Set TITLE, AUTHOR and DATE
+\title{Hill ascent confidence model and simulator for trailer trucks}
+\author{Tanja Emilie Henriksen}
+\date{\today}
+ 
+
+\begin{document}
+% Create the main title section
+\maketitle
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%  The main content of the report  %%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagebreak
+\section*{Abstract}
+This is the abstract
+
+
+ 
+\pagebreak
+\tableofcontents
+\listoffigures
+\listoftables
+
+\pagebreak
+\section{Introduction}
+Road friction is crucial to traffic safety. Winter roads can be challenging since the conditions may change rapidly. One of the most abrupt factors for people and businesses in the Arctic region is the closing of main roads due to trailer trucks in need of rescue. 
+\par 
+Most of the previous works on road friction and its correlation with traffic safety has been focusing on the risk of accidents ~\citep{Friction}. But closing of a road reasoned by a trailer truck needing rescue because it was unable to ascent a hill causes cascading problems for the community. For example, it affects the abilities to clean the roads for snow, salting or sanding, and assisting for rescues. This in turn makes the roads less safe and thus increases the risk of accidents.
+\par
+A simulation could help predict the chances of a trailer truck being unable to ascent a hill. This could potentially reduce the yearly resources needed to rescue these trailer trucks tremendously. 
+
+\subsection{Relevance}
+
+
+\subsection{Problem description}
+The main purpose of this thesis is to research the possibility of creating a realistic simulation of trailer trucks trying to ascent a hill. This includes creation a demo, as well as looking into how accurate the simulation is depending on different required inputs. There will also be focus on how the effects of adjusting some of the variable parameters can be shown, and to which extent does the trade-off between complexity and simplicity affect the uncertainty of the model. For example, is a simplified model still useful and/or relevant?
+
+\subsubsection{Inputs and variable parameters}
+There are several variables needed to be taken into consideration when creating the simulation. The road condition, the truck model and hill steepness are some of the basic variables we need for a working simulation. The main factors regarding variables is the complexity and realism of the simulation. A complex friction calculation will give a more realistic result, but a demo might never be finished. 
+
+
+\subsubsection{Friction}
+
+
+\subsubsection{Scope and limitaitons}
+
+
+
+\pagebreak
+% Include the bibliography
+\bibliographystyle{apalike}
+\bibliography{bibl}
+\end{document}
